@@ -13,10 +13,29 @@
         margin: 0;
         overflow: hidden;
       }
+
+      .hidden {
+        display: none !important;
+      }
+
+      .winner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        font-size: 64px;
+        z-index: 1;
+        position: absolute;
+        color: white;
+      }
     </style>
     <title>Maze</title>
   </head>
   <body>
+    <div class="winner hidden">
+      <h1>You Win!</h1>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
